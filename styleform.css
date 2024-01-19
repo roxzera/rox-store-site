@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header a img:hover {
+    opacity: 0.66;
+}
+
+.container {
+    width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header a,
+header button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 36px;
+    color: white;
+    transition: color 200ms ease-in-out;
+}
+
+header button {
+    transition: background-color 200ms ease-in-out;
+    transition: transform 200ms ease-in;
+}
+
+header a:hover,
+header button:hover  {
+    color: rgb(0, 182, 30);
+    /* opacity: .5; */
+    transform: scale(1.05);
+}
+
+header button:hover  {
+    transform: scale(1.05);
+}
+
+header button:hover {
+    color: white;
+    background-color: rgb(0, 104, 17);
+}
+
+.market button {
+    padding: 5px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(0, 126, 21);
+    border: none;
+    border-radius: 6px;
+}
+
+header ul li {
+    display: inline;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    /* background-image: linear-gradient(rgb(32, 32, 32), rgba(61, 61, 61, 0.5)) */
+}
+
+header div img {
+    width: 200px;
+    height: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+body section .container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 36px;
+}
+
+.main form{
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.forms input,
+.forms textarea,
+.forms button {
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 320px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.forms textarea {
+    resize: none;
+    height: 180px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.forms button {
+    background-color: rgb(0, 104, 17);
+    color: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    transition: transform 200ms ease-in;
+}
+
+.forms button:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 104, 17);
+}
+
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ecf0f1;
+    background-color: rgb(10, 10, 10);
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.container-footer ul li{
+    display: inline;
+}
+
+.infos li a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-midias img{
+    width: 34px;
+    margin-bottom: 12px;
+}
+
+.social-midias ul a {
+    text-decoration: none;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infos ul li{
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+.infos ul li a:hover{
+    color: darkgray;
+}
+
+.social-midias img:hover{
+    opacity: 0.3;
+}
+
+.copy p{
+    margin-top: 4px;
+    font-size: 10px;
+    color: darkgray;
+}
+
+@media screen and (max-width: 1105px) {
+    .comeco,
+    .market {
+        display: none;
+    }
+
+    header div img {
+        width: 20%;
+    }
+
+    .social-midias img{
+        width: 25px;
+        margin-left: 2px;
+        margin-bottom: 6px;
+    }
+    
+    .infos ul li{
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+    
+    .copy p{
+        margin-top: 4px;
+        font-size: 9px;
+        color: darkgray;
+    }
+
+    .main h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .forms input,
+    .forms textarea,
+    .forms button {
+        width: 280px;
+    }
+    
+    .forms textarea {
+        height: 130px;
+    }
+}

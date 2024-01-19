@@ -13,15 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    height: 100vh;
-}
-
-.container-products .container{
-    height: 60vh;
-}
-
-.container-reps .reputions{
-    height: 70vh;
+    height: 99.9vh;
 }
 
 .container-products .container {
@@ -36,7 +28,7 @@ header a img:hover {
 }
 
 .container {
-    width: 1366px;
+    width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
@@ -166,7 +158,7 @@ section .container .main button {
 
 svg {
     position: absolute;
-    bottom: -1;
+    bottom: 0;
     left: 0;
 }
 
@@ -253,14 +245,15 @@ svg {
 }
 
 .h2,
-.reputions h2 {
+#reps h2 {
     font-size: 40px;
     text-align: center;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .products {
@@ -377,4 +370,98 @@ footer {
     margin-top: 4px;
     font-size: 10px;
     color: darkgray;
+}
+
+@media screen and (max-width: 1105px) {
+    .comeco,
+    .market {
+        display: none;
+    }
+
+    header div img {
+        width: 20%;
+    }
+
+    .main h1{
+        font-size: 25px;
+    }
+
+    .main p {
+        font-size: 10px;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    #productions div {
+        padding: 40px 50px;
+        margin-bottom: 50px;
+    }
+
+    #productions {
+        margin-top: 30px;
+    }
+
+    #productions button {
+        padding: 6px 30px;
+        font-size: 13px;
+    }
+    
+    #productions {
+        flex-direction: column;
+    }
+    
+    .h2 {
+        margin-top: 30px;
+    }
+
+    .h2,
+    #reps h2 {
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+
+    .reputions img {
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 6px;
+    }
+
+    .reputions {
+        padding: 30px 8%;
+    }
+
+    .reputions p{
+        margin-top: 40px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    .reputions p {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .social-midias img{
+        width: 25px;
+        margin-left: 2px;
+        margin-bottom: 6px;
+    }
+    
+    .infos ul li{
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+    
+    .copy p{
+        margin-top: 4px;
+        font-size: 9px;
+        color: darkgray;
+    }
 }
